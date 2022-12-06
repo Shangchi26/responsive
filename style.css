@@ -209,7 +209,6 @@ footer button{
 .toggleMenu{
     display: none;
 }
-
 @media screen and (max-width: 820px) {
     header{
         height: 50vh;
@@ -295,8 +294,24 @@ footer button{
         background-color: #ffffff4D;
         backdrop-filter: blur(10px);
         z-index: 6;
+        text-align: left;
+        width: 80%;
+        margin: 0;
+        transition: 0.5s;
+        transform: translate(-100%);
     }
-    
+    .menuTop .menu.active{
+        transform: translate(0);
+    }
+    .menuTop .menu li {
+        display: block;
+        padding: 20px;
+    }
+    .toggleMenu{
+        text-align: right;
+        display: block;
+        text-shadow: 0 0 10px #000;
+    }
     
     
   }
